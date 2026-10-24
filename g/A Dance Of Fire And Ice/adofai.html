@@ -1,0 +1,15 @@
+<!-- This is a file by POG Sites (https://pogg.vercel.app) --> 
+<!-- We do not claim ownership of any of these games. -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iKingMugz/ecog-adofai@main/style.css">
+<script src="https://cdn.jsdelivr.net/gh/iKingMugz/ecog-adofai@main/UnityProgress.js">
+</script>
+<script src="https://cdn.jsdelivr.net/gh/iKingMugz/ecog-adofai@main/Build/UnityLoader.js">
+</script>
+<script>
+	var gameInstance = UnityLoader.instantiate("gameContainer", "https://cdn.jsdelivr.net/gh/iKingMugz/ecog-adofai@main/Build/adofaiii4.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}}); 
+</script>
+<script src=""></script>
+<div class="webgl-content">
+	<div id="gameContainer" style="width: 100vw; height: 100vh"></div>
+</div>
