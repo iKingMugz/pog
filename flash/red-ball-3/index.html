@@ -1,7 +1,7 @@
 <Module>
 
 
-<!-- an ACTUAL working Red Ball 3 port made by "all-red-ball-games" on github -->
+<!-- an ACTUAL working Red Ball 3 port made by iKingMugz (https://github.com/iKingMugz) -->
 
 
 <Module>
@@ -84,7 +84,6 @@
       const windowHeight = window.innerHeight;
       const aspectRatio = 5.5 / 3;
       
-      // Use 95% of available space instead of 100%
       let width = Math.floor(windowWidth * 1);
       let height = Math.floor(width / aspectRatio);
       
@@ -96,11 +95,9 @@
       container.style.width = `${width}px`;
       container.style.height = `${height}px`;
       
-      // Calculate margins
       const topMargin = (windowHeight - height) / 2;
       const leftMargin = (windowWidth - width) / 2;
       
-      // Set black box sizes
       boxTop.style.height = `${topMargin}px`;
       boxBottom.style.height = `${topMargin}px`;
       boxLeft.style.width = `${leftMargin}px`;
@@ -124,7 +121,7 @@
     });
   </script>
     
-    <embed src="https://cdn.jsdelivr.net/gh/all-red-ball-games/an-ACTUAL-port-of-red-ball-3@main/swf/redball3.swf" width="100%" height="100%">
+    <embed src="https://cdn.jsdelivr.net/gh/iKingMugz/ecog-file@main/working-rb3/swf/redball3.swf" width="100%" height="100%">
 </body>
 </html>
 </Content>
