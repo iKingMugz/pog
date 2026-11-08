@@ -10,7 +10,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #193d18ff, #0e220bff, #040f07ff);
+  background: radial-gradient(circle at top, #193d18ff, #193d18ff, #193d18ff);
   color: white;
 }
 
@@ -26,12 +26,6 @@ body {
 
 .search-box::placeholder {
   color: #00c828ff;
-}
-
-.nav-button:hover {
-  transform: translateY(-2px) scale(1.05);
-  background: linear-gradient(135deg, #d8ffdeff, #7bff82ff);
-  box-shadow: 0 0 22px rgba(120, 255, 131, 0.55);
 }
 
 .flex-container {
@@ -51,8 +45,6 @@ body {
   padding: 10px;
   text-align: center;
 
-  
-
   transition: .25s ease;
 
   position: relative;
@@ -69,24 +61,12 @@ body {
 
   background:
       radial-gradient(circle,
-      rgba(88, 208, 73, 0.22),
+      rgba(81, 192, 67, 0.22),
       transparent 65%);
 
   transform: rotate(25deg);
   opacity: 0;
   transition: .3s;
-}
-
-.game-tile:hover::before {
-  opacity: 1;
-}
-
-.game-tile:hover {
-  transform: translateY(-6px) scale(1.05);
-  border-color: rgba(163, 255, 140, 0.45);
-  box-shadow:
-      0 0 25px rgba(110, 255, 122, 0.28),
-      0 0 40px rgba(82, 220, 70, 0.18);
 }
 
 .game-icon {
@@ -95,13 +75,13 @@ body {
   object-fit: cover;
 
   border-radius: 12px;
-  border: 2px solid rgba(48, 232, 63, 0.12);
+  border: 3px solid rgba(29, 242, 46, 0.12);
 
   transition: .25s;
 }
 
 .game-tile:hover .game-icon {
-  border-color: rgba(58, 223, 99, 0.45);
+  border-color: rgba(62, 241, 107, 0.45);
 }
 
 .game-title {
@@ -109,11 +89,6 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: #e6ffe5ff;
-}
-
-.popular {
-  border: 1px solid #a4ff9cff;
-  box-shadow: 0 0 18px rgba(86, 234, 73, 0.35);
 }
 
 </style>
@@ -126,10 +101,10 @@ body {
 
   <div class="flash-popup-box">
 
-    <h1 class="flash-title">POG Sites</h1>
+    <h1 class="flash-title"><b>POG Sites</b></h1>
 
     <p class="flash-desc">
-      Welcome to POG Sites! The ultimate collection of over 600 games by MTKSIKM!  
+      Welcome to POG Sites! The ultimate collection of over 600 games by iKingMugz!  
       Please join the 
       <a href="https://docs.google.com/document/d/1qLyKvXo3Ed605YzdAWZjtgIXsbjtD3BDLIWozPZMRU4/" target="_blank" class="flash-link">Discord</a> 
       to help support us! We are currently trying to get more games, so stay tuned!
@@ -143,34 +118,46 @@ body {
   
 <style>
 
+
 .navbar {
     text-align: center;
     margin-bottom: 20px;
 }
 
 .nav-button {
+    display: inline-block;
     padding: 12px 20px;
     margin: 10px;
 
     background: linear-gradient(135deg, #80ff6cff);
     color: white;
-    font-weight: nonw;
+    font-weight: normal;
     text-decoration: none;
-    
+
+    border-radius: 18px;
+
+    border: 4px solid transparent;
+    box-sizing: border-box;
+
+    transition: border-color 0.3s ease;
 }
 
 .nav-button:hover {
-    transform: translateY(-3px) scale(1.05);
+    border-color: #00d053ff;
+}
 
-    background: linear-gradient(
-        135deg,
-        #d8ffddff,
-        #92ffa8ff
-    );
+.flash-title {
+    color:  #00ff66ff;
+    font-weight: normal;
+    text-decoration: none;
 
-    box-shadow:
-        0 0 20px rgba(147, 255, 120, 0.45),
-        0 0 35px rgba(80, 220, 94, 0.25);
+}
+
+.flash-desc {
+    color:  #00d053ff;
+    font-weight: normal;
+    text-decoration: none;
+
 }
 
 .flash-popup {
@@ -208,18 +195,19 @@ body {
     border: 1px solid rgba(180, 255, 195, 0.25);
 }
 
+.flash-button {
+    background: linear-gradient(135deg, #33b31fff);
+    color: white;
+    font-weight: normal;
+    text-decoration: none;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    border-radius: 12px;
+
+}
+
 .flash-button:hover {
-
-    transform: translateY(-3px) scale(1.05);
-
-    background: linear-gradient(
-        135deg,
-        #d8ffd8ff,
-        #a1ff92ff
-    );
-
-    box-shadow:
-        0 0 25px rgba(127, 255, 120, 0.45);
+    border-color: #00ff66;
 }
   
 </style>
@@ -227,7 +215,6 @@ body {
 <div class="navbar">
     <a href="index.html" class="nav-button">Back Home</a>
 </div>
-
 
 
 <div class="navbar">
